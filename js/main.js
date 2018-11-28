@@ -15,7 +15,10 @@ function datahref() {
 }
 
 
+function initProduit() {
 
+    $('#multiscroll').multiscroll();
+}
 
 // Affiche ou masque le menu en fonction de son état
 function clickMenu() {

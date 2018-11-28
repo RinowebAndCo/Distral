@@ -879,10 +879,6 @@ div#contact div#coordonnees {
 	line-height:22px;
 }
 
-div#contact div#coordonnees span {
-	text-align : right;
-	float : right;
-}
 
 div#contact div#map {
 	height:445px;
@@ -933,6 +929,8 @@ div#contener div#actus div.actu div.textActu {
 /* FOOTER */
 
 footer {
+        position: static;
+    bottom: 0;
 	width : 100%;
 	height : 29px;
 	background-color:#000;
@@ -981,4 +979,10 @@ img.imageH2 {
 
 [data-href]{
     cursor:pointer;
+}
+table,form{
+    width:100%;
+}
+td *{
+width:100%;
 }

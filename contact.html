@@ -146,47 +146,105 @@
         </div>
     </div>
 
-    <div id="contener">
+    <div class="container">
         <div id="contact">
-            <h2>Contact</h2>
-            <div id="colL">
-                <p>Pour tout renseignement, utilisez le formulaire de contact si dessous. Nous vous répondrons au plus vite.</p>
-                <form action="../actions/envoieMail.php" method="post" onSubmit="return verifContact();">
-                    <p><label for="nom">Nom et prénom</label></p>
-                    <p><input id="nom" name="nom" type="text" /></p>
-                    <p><label for="societe">Société</label></p>
-                    <p><input id="societe" name="societe" type="text" /></p>
-                    <table>
-                        <tr>
-                            <td><label for="tel">Téléphone</label></td>
-                            <td><label for="fax">Fax</label></td>
-                        </tr>
-                        <tr>
-                            <td><input id="tel" name="tel" type="text" /></td>
-                            <td><input id="fax" name="fax" type="text" /></td>
-                        </tr>
-                    </table>
-                    <p><label for="mail">Email</label></p>
-                    <p><input id="mail" name="mail" type="text" /></p>
-                    <p><label for="message">Message</label></p>
-                    <p><textarea id="message" name="message" rows="8"></textarea></p>
-                    <button type="submit">Envoyer</button>
-                </form>
+            <div class="row">
+                <h2>Contact</h2>
             </div>
-            <div id="colR">
-                <div id="coordonnees">
-                    DISTRAL<br />
-                    10, Avenue Bois Vert <span>Téléphone : 05 62 20 53 14</span><br />
-                    31120 Portet sur Garonne <span>Fax : 05 61 72 55 34</span>
+            <div class="row">
+                <div id="colL" class="col-6">
+                    <p>Pour tout renseignement, utilisez le formulaire de contact si dessous. Nous vous répondrons au plus vite.</p>
+                    <div class="col-12">
+                        <form action="../actions/envoieMail.php" method="post" onSubmit="return verifContact();" class="col-12">
+                            <div class="row">
+                                <table>
+                                    <tr>
+                                        <td><label for="nom">Nom et prénom</label></td>
+                                        <td><label for="societe">Société</label></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td><input id="nom" name="nom" type="text" /></td>
+
+                                        <td><input id="societe" name="societe" type="text" /></td>
+                                    </tr>
+                     
+                                    <tr>
+                                        <td><label for="tel">Téléphone</label></td>
+                                        <td><label for="fax">Fax</label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input id="tel" name="tel" type="text" /></td>
+                                        <td><input id="fax" name="fax" type="text" /></td>
+                                    </tr>
+                            
+                                    <tr>
+                                        <td>
+                                            <label for="mail">Email</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input id="mail" name="mail" type="text" />
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td>
+                                            <label for="message">Message</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <textarea id="message" name="message" rows="8"></textarea>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="row justify-content-center">
+                                <button type="submit">Envoyer</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div id="map">
+                <div id="colR" class="col-6">
+
+                    <div id="coordonnees" class="row">
+                        <table>
+                            <tr>
+                                <th>
+                                    DISTRAL
+
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    10, Avenue Bois Vert
+
+                                </td>
+                                <td class="text-right">
+                                    31120 Portet sur Garonne
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>Téléphone : 05 62 20 53 14</span>
+                                </td>
+                                <td class="text-right">
+                                    <span>Fax : 05 61 72 55 34</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="map" class="row">
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
-    <div class="clear"></div>
 
-    <footer >
+    <footer>
         <table>
             <tr>
                 <td class="tdFooter1">Copyright DISTRAL 2018</td>
