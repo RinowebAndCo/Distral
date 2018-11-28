@@ -1,0 +1,984 @@
+
+@font-face {
+    font-family: 'DINMedium';
+    src: url('din-medium-webfont.eot');
+    src: url('din-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('din-medium-webfont.woff') format('woff'),
+         url('din-medium-webfont.ttf') format('truetype'),
+         url('din-medium-webfont.svg#DINMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DINBlack';
+    src: url('din-black-webfont.eot');
+    src: url('din-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('din-black-webfont.woff') format('woff'),
+         url('din-black-webfont.ttf') format('truetype'),
+         url('din-black-webfont.svg#DINBlack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DINRegular';
+    src: url('din-bleu-webfont.eot');
+    src: url('din-bleu-webfont.eot?#iefix') format('embedded-opentype'),
+         url('din-bleu-webfont.woff') format('woff'),
+         url('din-bleu-webfont.ttf') format('truetype'),
+         url('din-bleu-webfont.svg#DINRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DINBold';
+    src: url('din-bold-webfont.eot');
+    src: url('din-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('din-bold-webfont.woff') format('woff'),
+         url('din-bold-webfont.ttf') format('truetype'),
+         url('din-bold-webfont.svg#DINBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+	font-size:14px;
+	font-family:Arial;
+	margin:0 auto;
+	width:100%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a img {
+	border : none;
+}
+
+/* CK */
+span.titre {
+	font-size :18px;
+	font-family : 'DINBold';
+}
+
+div#contener div#societe div#ckSociete span.titre {
+	font-size:24px;
+	font-family:'DINBold';
+	font-style:italic;
+	color : #000;
+}
+
+div#contener div#societe div#ckSociete span.sousTitre {
+	font-size:16px;
+	font-family:Arial, Helvetica, sans-serif;
+	color : #000;
+	font-weight:bold;
+}
+
+span.titreFleche {
+	display : block;
+	font-size : 16px;
+	font-weight:bold;
+	font-style:normal;
+	background:url(img/fleche1.png) no-repeat left;
+	padding-left:30px;
+	margin-top : 25px;
+	margin-bottom:20px;
+}
+
+p.titreFleche {
+	font-size : 16px;
+	font-weight:bold;
+	font-style:normal;
+	background:url(img/fleche1.png) no-repeat left;
+	padding-left:30px;
+	margin-top : 25px;
+	margin-bottom:20px;
+}
+
+span.vide {
+	display : block;
+	height:18px;
+	margin-top : 20px;
+	margin-bottom:20px;
+}
+
+#mainProduit .clear {
+	height:0px;
+}
+
+.jDiaporama_wrapper {
+	margin : 0 auto;
+}
+
+/* DIAPORAMA */
+
+div#diaporama {
+	position : relative;
+	overflow:hidden;
+	height:450px;
+}
+
+div#diaporama div#menuDiaporama {
+	position : absolute;
+	bottom : 0;
+	width : 100%;
+	height : 45px;
+	background:url('img/menuDiaporama.png') repeat;
+}
+
+div#diaporama div#menuDiaporama .controlDiapo {
+	cursor : pointer;
+}
+
+div#diaporama div#menuDiaporama div.control {
+	float : right;
+	margin-right:110px;
+	margin-top:6px;
+}
+
+div#diaporama div#menuDiaporama .controlN,div#diaporama div#menuDiaporama .controlP{
+	cursor:pointer;
+}
+
+div#diaporama div#menuDiaporama div#descrImage {
+	float : right;
+	widht : 370px;
+	text-align : right;
+	margin-top:1px;
+	margin-right:20px;
+	font-size : 30px;
+	font-family: 'DINBold';
+	font-weight:normal;
+	line-height:20px;
+}
+
+div#diaporama div#menuDiaporama div#descrImage a {
+	text-decoration : none;
+	color : #000;
+}
+
+div#diaporama div#menuDiaporama div#descrImage span {
+	font-size : 15px;
+	font-family: 'DINBlack';
+	font-weight : normal;
+	line-height:25px;
+}
+
+img.imgDiap {
+	/*display : none;width:100%;position:absolute;left:0;top:0;z-index:-1;*/
+}
+
+div#diaporama img.imageDiaporama {
+	display : inline;
+}
+
+div#diap {
+	position: absolute;
+	left : 0;
+	top : 0;	
+	width : 100%;
+	z-index : -1;
+}
+
+/* MENU */
+
+div#diaporama div#menu {
+	margin:0 auto;
+	z-index:10;
+	width:100%;
+	margin-top:10px;
+    min-width:100%;
+}
+
+div#diaporama div#menu table {
+	width :99%;
+	margin:0 auto;
+}
+
+div#diaporama div#menu table td#imageMenu {
+	width :170px ;
+	height : 99px;
+	padding:0;
+}
+
+div#diaporama div#menu table td#menuHaut {
+	width :635px ;
+	height : 99px;
+	padding:0;
+	vertical-align:bottom;
+    word-break: break-word;
+    text-align: center;
+}
+
+
+
+div#diaporama div#menu table td#zdMenu {
+	width : 350px;
+	height : 99px;
+	padding:0;
+}
+
+div#diaporama div#menu table td#menuHaut ul {
+	list-style-type : none;
+	padding-left:10px;
+}
+
+div#diaporama div#menu table td#menuHaut ul>li {
+	display:inline;
+}
+
+div#diaporama div#menu table td#menuHaut ul>li a{
+	color : #FFF;
+	text-decoration : none;
+	/*margin-right:28px;*/
+	font-size : 14px;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:5px;
+    cursor:pointer;
+}
+
+div#diaporama div#menu table td#menuHaut ul>li p{
+	color : #FFF;
+	text-decoration : none;
+	/*margin-right:28px;*/
+	font-size : 14px;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:5px;
+	display:inline;
+}
+
+div#diaporama div#menu table td#menuHaut ul>li a:hover{
+	background-color : #000;
+}
+
+div#diaporama div#menu table td#menuHaut ul>li a.actif{
+	background-color : #000;
+}
+
+div#diaporama div#menu table td#menuHaut ul>li p:hover{
+	background-color : #000;
+	cursor:pointer;
+}
+
+div#diaporama div#menu table td#menuHaut ul>li p.actif{
+	background-color : #000;
+}
+
+div#diaporama div#menu table td#zdMenu h2{
+	color : #FFF;
+	font-size:16px;
+	font-weight:normal;
+	font-family:'DINBold';
+	text-align:right;
+	padding-right:10px;
+	margin:0 0 30px 0;
+}
+
+div#diaporama div#menu table td#zdMenu a{
+	display : block;
+	color : #FFF;
+	text-decoration:none;
+	font-size:13px;
+	float:right;
+	margin-right:10px;
+	width : 106px;
+	height: 25px;
+	background:url('img/btnCompte.png') no-repeat;
+	line-height:25px;
+	text-align:right;
+	padding-right:10px;
+}
+
+div#menuProduits {
+	position : absolute;
+	width : 575px;
+	height : 220px;
+	background : url('img/bgMenuBis.png') repeat;
+	left : 45%;
+	margin-left:-22%;
+	display:none;
+	top : 115px;
+	padding-left:5px;
+}
+
+div#menuProduits h2 {
+	color : #FFF;
+	font-size : 18px;
+	font-weight : bold;
+	margin : 10px 0 5px 5px;
+}
+
+div#menuProduits table {
+	width : 180px;
+	text-align:center;
+	margin-top:5px;
+}
+
+div#menuProduits table td {
+	vertical-align:middle;
+}
+
+div#menuProduits table a{
+	font-size : 14px;
+	color : #FFF;
+	text-decoration:none;
+}
+
+div#menuProduits table a:hover{
+	text-decoration:underline;
+}
+
+div#menuProduits table a img{
+	margin-left : 5px;
+}
+
+div#menuProduits table td.ssMenuTd2 {
+	width : 120px;
+    color:white;
+}
+
+div.sousMenu {
+	float : left;
+	width:180px;
+	height:51px;
+	margin:5px;
+	background: url("img/fondSousMenu.png") repeat scroll 0 0 transparent;
+}
+
+/* CONTENER */
+
+div#contener {
+	width : 940px;
+	margin : 0 auto;
+	min-height:500px;
+	overflow:hidden;
+}
+
+/* MAIN */
+
+div#contener div#main {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size : 14px;
+	color : #000;
+	margin-top:20px;
+}
+
+div#contener div#main div#texteMain {
+	float : left;
+	width : 460px;
+	text-align:justify;
+	line-height:21px;
+}
+
+div#contener div#main div#actualites {
+	float : right;
+	width : 430px;
+}
+
+div#contener div#main div#actualites h2 {
+	background-color : #000;
+	font-size : 18px;
+	color : #FFF;
+	font-family:'DINBold';
+	height:23px;
+	line-height:23px;
+	margin-top:0;
+}
+
+div.actualite {
+	text-align:justify;
+	margin-bottom:20px;
+	position:relative;
+}
+
+div.imageActu {
+	float : left;
+	padding:2px;
+	background-color:#FFF;
+	border : solid 1px #959595;
+	margin:2px 20px 0 2px;
+}
+
+div.actualite div.new {
+	position : absolute;
+	top:0;
+	left:0;
+}
+
+p.titreActu {
+	font-size:14px;
+	font-weight:bold;
+	color : #000;
+	margin-bottom:0;
+	margin-top:0;
+}
+
+p.dateActu {
+	font-size : 12px;
+	color : #6f6f6f;
+	margin-top:0;
+	margin-bottom:10px;
+}
+
+p.descrActu {
+	font-size:14px;
+	color : #000;
+	line-height:21px;
+}
+
+a.savoirPlus {
+	display : block;
+	background:url(img/fleche.png) no-repeat left;
+	padding-left: 20px;
+	color : #000;
+	font-size : 14px;
+	font-family:'DINBold';
+	text-decoration:none;
+	width : auto;
+	float : right;
+}
+
+a.savoirPlus:hover , a.plusInfos:hover {
+	text-decoration : underline;
+}
+
+a.plusInfos {
+	display : block;
+	background:url(img/fleche.png) no-repeat left;
+	padding-left: 20px;
+	color : #000;
+	font-size : 14px;
+	font-family:'DINBold';
+	text-decoration:none;
+	width : auto;
+	float : right;
+}
+
+/* DOCUMENTATION */
+
+div#documentation {
+	width:100%;
+}
+
+div#documentation div#headerDocumentation {
+	background-color : #000;
+	height:23px;
+}
+
+div#documentation div#headerDocumentation table {
+	width : 100%;
+	height:23px;
+}
+
+div#documentation div#headerDocumentation table td.headerDocTd1{
+	width : 27px;
+}
+
+div#documentation div#headerDocumentation table td.headerDocTd2{
+	text-align : left;
+	font-size : 18px;
+	color : #FFF;
+	font-family:'DINBold';
+}
+
+div#documentation div#headerDocumentation table td.headerDocTd3{
+	text-align : right;
+	font-size : 12px;
+	color : #FFF;
+	padding-right:15px;
+}
+
+div.document {
+	width : 76px;
+	float : left;
+	margin-top:22px;
+	margin-right : 18px;
+}
+
+div.document.dernier {
+	margin-right : 0;
+}
+
+div.document div.imageDoc {
+	margin : 0 auto;
+	position : relative;
+	background:url(img/ombre.png) no-repeat center 108px;
+	height:132px;
+	overflow:hidden;
+}
+
+div.document div.hoverDoc {
+	display:none;
+	position : absolute;
+	top : 0;
+	left : 0;
+	z-index:100;
+}
+
+div.document div.refletDoc {
+	top : 0;
+	left : 0;
+	z-index:10;
+	position : absolute;
+}
+
+div.document p.titreDoc {
+	font-size : 12px;
+	font-weight:bold;
+	color : #000;
+	text-align:center;
+	margin-top:-12px;
+	z-index : 10;
+}
+
+div.document p.titreDoc a {
+	color : #000;
+	text-decoration:none;
+}
+
+img.ctrlDocL {
+	cursor : pointer;
+	margin : 0 15px 0 0;
+}
+
+img.ctrlDocR {
+	cursor : pointer;
+	margin : 0 0 0 0;
+}
+
+td#tdListeDocuments {
+	width:843px;
+}
+
+td#tdListeDocuments div#listeDocs {
+	display : inline;
+	overflow:hidden;
+}
+
+/* SOCIETE */
+
+div#contener div#societe h2 {
+	font-size : 24px;
+	font-family:'DINBold';
+	border-bottom: solid 2px #000;
+	padding-bottom:4px;
+}
+
+div#contener div#societe div#ckSociete {
+	float : left;
+	width : 600px;
+	text-align:justify;
+	line-height:23px;
+}
+
+#colRSociete {
+	float : right;
+	width : 300px;
+}
+
+#colRSociete div#photo1 {
+	margin-bottom : 35px;
+	margin-top:55px;
+}
+
+#colRSociete div#photo2 {
+	margin-bottom : 35px;
+}
+
+#devenir {
+	width : 270px;
+	color : #FFF;
+	font-size : 14px;
+	background-color:#f29400;
+	overflow:hidden;
+	padding:0 15px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#devenir p{
+	font-size : 15px;
+	font-weight:bold;
+}
+
+#devenir ul{
+	padding-left : 15px;
+}
+
+#devenir ul>li{
+	margin-bottom : 15px;
+	font-weight:normal;
+}
+
+/* TECHNOLOGIE */
+
+div#contener div#technologie h2 {
+	font-size : 24px;
+	font-family:'DINBold';
+	border-bottom: solid 2px #000;
+	padding-bottom:4px;
+}
+
+div#contener div#technologie h2 span {
+	font-size : 15px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	float:right;
+	line-height:40px;
+}
+
+div#contener div#technologie div#main {
+	width : 100%;
+}
+
+div#contener div#technologie div#main div#colLeft {
+	width : 140px;
+	float : left;
+}
+
+div#contener div#technologie div#main div#colLeft a {
+	display : block;
+	color : #000;
+	text-decoration:none;
+	font-size:15px;
+	font-weight:bold;
+	margin-bottom:15px;
+}
+
+div#contener div#technologie div#main div#colLeft a.current {
+	text-decoration:underline;
+}
+
+div#contener div#technologie div#main div#mainTechnologie {
+	width : 800px;
+	float : right;
+	font-size : 14px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:justify;
+	line-height:21px;
+}
+
+div#contener div#technologie div#main div#mainTechnologie h3 {
+	font-size : 24px;
+	font-weight:bold;
+	font-style:italic;
+	margin-top:0;
+	margin-bottom:15px;
+}
+
+
+div#contener div#technologie.savoir div#main div#mainTechnologie div#l2Col1 {
+	width : 300px;
+	float : left;
+	text-align:justify;
+}
+
+div#contener div#technologie.savoir div#main div#mainTechnologie div#l2Col2 {
+	width : 467px;
+	float : right;
+	text-align:justify;
+}
+
+div#contener div#technologie div#main div#mainTechnologie div#l2Col1 {
+	width : 400px;
+	float : left;
+	text-align:justify;
+}
+
+div#contener div#technologie div#main div#mainTechnologie div#l2Col2 {
+	width : 346px;
+	float : right;
+	text-align:justify;
+}
+
+ul.circleOrange>li {
+	list-style-image: url(img/puceOrange.png);
+}
+
+/* GARANTIES */
+
+div#contener div#garanties h2 {
+	font-size : 24px;
+	font-family:'DINBold';
+	border-bottom: solid 2px #000;
+	padding-bottom:4px;
+}
+
+div#contener div#garanties div.garantie {
+	width : 130px;
+	float : left;
+	text-align:center;
+	margin-right:5px;
+}
+
+div#contener div#garanties div.garantie p{
+	width : 120px;
+	margin : 15px auto;
+}
+
+div#contener div#garanties div.lCol1 {
+	width : 48%;
+	float : left;
+}
+
+div#contener div#garanties div.lCol2 {
+	width : 48%;
+	float : right;
+}
+
+/* PRODUIT */
+
+div#contener div#produit p.ariane {
+	font-size : 12px;
+	color : #6f6f6f;
+}
+
+div#contener div#produit h2 {
+	font-size : 24px;
+	font-family:'DINBold';
+	border-bottom: solid 2px #000;
+	padding-bottom:4px;
+}
+
+div#contener div#produit h2 span {
+	font-size : 15px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	float:right;
+	line-height:40px;
+}
+
+div#contener div#produit div#main div#colLeft {
+	width : 140px;
+	float : left;
+}
+
+div#contener div#produit div#main div#colLeft a {
+	display : block;
+	color : #000;
+	text-decoration:none;
+	font-size:15px;
+	font-weight:bold;
+	margin-bottom:15px;
+}
+
+div#contener div#produit div#main div#colLeft a.current {
+	text-decoration:underline;
+}
+
+div#contener div#produit div#main div#mainProduit {
+	width : 800px;
+	float : right;
+	font-size : 14px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:justify;
+	line-height:21px;
+}
+
+div#contener div#produit div#main div#mainProduit span.titreProduit {
+	display : block;
+	font-size : 24px;
+	font-weight:bold;
+	font-style : italic;
+	color : #000;
+	margin-bottom : 15px;
+}
+
+div#contener div#produit div#main div#mainProduit span.titreProduit span {
+	color : #f29400;	
+}
+
+div#contener div#produit div#main div#mainProduit .left{
+	width : 500px;
+	float : left;
+}
+
+div#mainProduit .right.orange{
+	width : 240px;
+	float : right;
+	color : #FFF;
+	font-size : 14px;
+	background-color:#f29400;
+	overflow:hidden;
+	padding:0 15px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:left;
+	margin-top:25px;
+}
+
+div#contener div#produit div#main div#mainProduit .right.orange p{
+	font-size : 15px;
+	font-weight : bold;
+}
+
+div#contener div#produit div#main div#mainProduit .right.orange ul{
+	padding-left : 15px;
+	line-height : 25px;
+}
+
+/* CONTACT */
+
+div#contener div#contact h2 {
+	font-size : 24px;
+	font-family:'DINBold';
+	border-bottom: solid 2px #000;
+	padding-bottom:4px;
+}
+
+div#contener div#contact div#colL {
+	width : 430px;
+	float : left;
+	font-size : 15px;
+}
+
+div#contener div#contact div#colL form p {
+	margin:0 0 4px 0;
+}
+
+div#contener div#contact div#colL input {
+	width : 100%;
+	border : 1px solid #dadad8;
+	background-color:#fbfde9;
+	height:26px;
+	margin-bottom:15px;
+}
+
+div#contener div#contact div#colL table {
+	width : 100%;
+}
+
+div#contener div#contact div#colL textarea {
+	width : 100%;
+	border : 1px solid #dadad8;
+	background-color:#fbfde9;
+}
+
+div#contener div#contact div#colR {
+	width : 470px;
+	float:right;
+	border:1px solid #dfdfdf;
+	border-radius:5px;
+}
+
+div#contact div#coordonnees {
+	border-bottom:1px solid #dfdfdf;
+	padding : 20px 20px;
+	margin-bottom:10px;
+	font-size:15px;
+	font-weight:bold;
+	text-align:left;
+	line-height:22px;
+}
+
+div#contact div#coordonnees span {
+	text-align : right;
+	float : right;
+}
+
+div#contact div#map {
+	height:445px;
+	width:450px;
+	margin: 0 auto 10px auto;
+}
+
+div#contact form button {
+	display : block;
+	float : right;
+	width : 129px;
+	height : 33px;
+	color : #FFF;
+	font-size : 16px;
+	font-family:'DINBold';
+	text-align:center;
+	border : none;
+	background : url('img/btnEnvoyer.png') no-repeat transparent;
+	cursor : pointer;
+	margin-top:25px;
+}
+
+/* ACTUALITES */
+
+div#contener div#actus h2 {
+	font-size : 24px;
+	font-family:'DINBold';
+	border-bottom: solid 2px #000;
+	padding-bottom:4px;
+}
+
+div#contener div#actus img.imageActu {
+	margin-left:20px;
+	float : right;
+}
+
+div#contener div#actus div.actu {
+	background:url(img/sepActu.png) no-repeat bottom;
+	padding-bottom:20px;
+}
+
+div#contener div#actus div.actu div.textActu {
+	width : 595px;
+	float:left;
+	text-align:justify;
+}
+
+/* FOOTER */
+
+footer {
+	width : 100%;
+	height : 29px;
+	background-color:#000;
+	color : #808080;
+	margin-top:20px;
+	font-size:11px;
+}
+
+footer a{
+	text-decoration : none;
+	color : #808080;	
+}
+
+footer table{
+	width : 100%;
+	height : 29px;	
+}
+
+footer .tdFooter1{
+	text-align : left;
+	padding-left:10px;
+}
+
+footer .tdFooter2{
+	text-align : center;
+}
+
+footer .tdFooter3{
+	text-align : right;
+	padding-right:10px;
+}
+
+/* GENERAL */
+
+img.imageH2 {
+	margin : 0px 7px 0 5px;
+}
+
+.clear {
+	clear:both;
+}
+
+#multiscroll img{
+    width:50vw;
+}
+
+[data-href]{
+    cursor:pointer;
+}
