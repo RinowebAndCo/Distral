@@ -13,22 +13,16 @@ function datahref() {
         document.location = $(this).data('href');
     });
 }
-
-
+   
 function initProduit() {
 
-    $('#multiscroll').multiscroll();
+   
 }
 
 // Affiche ou masque le menu en fonction de son état
 function clickMenu() {
     $('#menuProduitslink').click(function () {
-        if ($("#menuProduits").css('display') == 'none') {
-            $("#menuProduits").show();
-        }
-        else {
-            $("#menuProduits").hide();
-        }
+        $('body').toggleClass('sousMenuTransform')
     });
 }
 

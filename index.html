@@ -15,93 +15,8 @@
 </head>
 <body>
     <div id="diaporama">
-        <div id="menu">
-            <table cellpadding="0" cellspacing="0">
-                <tr>
-                    <td id="imageMenu"><img src="css/img/distral.png" alt="Distral" /></td>
-                    <td id="menuHaut">
-                        <ul>
-                            <li><a class='actif' href="index.html">Accueil</a></li>
-                            <li><a href="societe.html">Société</a></li>
-                            <li><a href="savoir.html">Technologie</a></li>
-                            <li><a id="menuProduitslink">Produits</a></li>
-                            <li><a href="garanties.html">Garanties</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </td>
-                    <td id="zdMenu">
-                        <h2>CONCEPTEUR, GAMMISTE &amp; FABRICANT</h2>
-                        <a href="http://appli.distral.fr/B2B/Default.aspx" target="_blank">Espace Pro</a>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div id="menuProduits">
-            <h2>Produits</h2>
-            <div class="sousMenu">
-                <table cellpadding="0" cellspacing="0">
-                    <tr data-href="">
-                        <td><img src="images/sousMenu1.png" alt="" align="left" /></td>
-                        <td class="ssMenuTd2" align="center">Portails</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="sousMenu">
-                <table cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td><img src="images/sousMenu_Cloture.jpg" alt="" align="left" /></td>
-                        <td class="ssMenuTd2" align="center">Clôture</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="sousMenu">
-                <table cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td><img src="images/sousMenu2.png" alt="" align="left" /></td>
-                        <td class="ssMenuTd2" align="center">Volets</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="sousMenu">
-                <table cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td><img src="images/sousMenu3.png" alt="" align="left" /></td>
-                        <td class="ssMenuTd2" align="center">Barrières de piscine</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="sousMenu">
-                <table cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td><img src="images/sousMenu4.png" alt="" align="left" /></td>
-                        <td class="ssMenuTd2" align="center">Pergolas</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="sousMenu">
-                <table cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td><img src="images/sousMenu5.png" alt="" align="left" /></td>
-                        <td class="ssMenuTd2" align="center">Portes de garage</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="sousMenu">
-                <table cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td><img src="images/sousMenu6.png" alt="" align="left" /></td>
-                        <td class="ssMenuTd2" align="center">Automatisme Motorisation</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="sousMenu">
-                <table cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td><img src="images/sousMenu_GardeCorps.jpg" alt="" align="left" /></td>
-                        <td class="ssMenuTd2" align="center">Garde corps</td>
-                    </tr>
-                </table>
-            </div>
+        <div id="distrapro">
+            <a href="http://appli.distral.fr/B2B/Default.aspx" target="_blank">Espace Pro</a>
         </div>
         <div id="diap">
             <div class="slide">
@@ -135,17 +50,78 @@
                 <img class="imageDiaporama imgDiap" src="datas/diaporama/38/top1_38.jpg" alt="" />
             </div>
         </div>
-        <div id="menuDiaporama">
-            <div class="control">
-                <img class="controlP" id="leftControl" src="css/img/previous.png" alt="" />
-                <img class="controlN" id="rightControl" src="css/img/next.png" alt="" />
-            </div>
-            <div id="descrImage">
-                <a href="">Barrières de piscine <br /><span>Gamme Ariane 1</></span></a>
-            </div>
+    </div>
+    <nav class="navbar navbar-expand affix-top-main">
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class='actif nav-link' href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a href="societe.html" class="nav-link">Société</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="savoir.html" class="nav-link">Technologie</a>
+            </li>
+            <li class="nav-item">
+                <a id="menuProduitslink" class="nav-link">Produits</a>
+            </li>
+            <li class="nav-item">
+                <a href="garanties.html" class="nav-link">Garanties</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+            <li>
+                <a class="navbar-brand">
+                    <img id="imgBrand" src="css/img/distral.png" alt="Rinoweb" />
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+    <div class="sousMenu">
+        <div>
+            <span>Portails</span>
+            <img class="row mx-auto" src="images/sousMenu1.png" alt="" />
+        </div>
+        <div>
+            <span>Volets</span>
+            <img class="row mx-auto" src="images/sousMenu2.png" alt="" />
+        </div>
+        <div>
+            <span>Distra'sun</span>
+            <img class="row  mx-auto" src="images/sousMenu3.png" alt="" />
+        </div>
+        <div>
+            <span>Clôture</span>
+            <img class="row mx-auto" src="images/sousMenu4.png" alt="" />
+
+        </div>
+
+        <div>
+            <span>Garde-Corps</span>
+            <img class="row mx-auto" src="images/sousMenu5.png" alt="" />
+
+        </div>
+        <div>
+            <span>Porte de garage</span>
+            <img class="row  mx-auto" src="images/sousMenu6.png" alt="" />
+
+        </div>
+        <div>
+            <span>Barrière de piscine</span>
+            <img class="row mx-auto" src="images/sousMenu6.png" alt="" />
+
+        </div>
+        <div>
+            <span>Motorisation</span>
+            <img class="row mx-auto" src="images/sousMenu5.png" alt="" />
+
+
         </div>
     </div>
-
     <div class="container">
         <div class="row">
             <div class="col-5 pr-1">
