@@ -22,36 +22,55 @@
         width: 100% !important;
     }
 }
-
+.d-mob-1 {
+        -ms-flex: 0 0 2% !important;
+        flex: 0 0 2% !important;
+        max-width: 2% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        z-index: 100;
+    }
 #navigationProduit {
     text-align: center;
 }
 
 .top50 {
-    top: 50%;
     position: relative;
+    height:100vh;
 }
 
     .top50 div {
-        height: 25px;
+        height: 42%;
+    }
+    .top50 a {
+        top: 50%;
+        position:relative;
     }
 
 .produit #diaporama {
-    height: auto !important;
-    z-index: 2;
-    background: #87bb22;
+    display:none;
 }
-
+.produit footer{
+    position:absolute !important;
+    bottom:0;
+}
+.produit #liBrand {
+    display:none !important;
+}
 #multiscroll {
     z-index: 1;
 }
 
 .ms-left, .ms-right {
     position: relative !important;
+            -ms-flex: 0 0 49%;
+        flex: 0 0 49%;
+        max-width: 49%;
+
 }
 
 .ms-right {
-    right: 0px !important;
+    right: -1px !important;
 }
 
 .col-5-5 {
@@ -59,10 +78,24 @@
     flex: 0 0 45.833333%;
     max-width: 46%;
 }
-
 .ms-section {
+    z-index:1 ;
 }
+#anchor{
+    z-index:2;
+}
+ #anchor .row{
+     justify-content:center;
+     background:#282827;
+ }
 
+ #anchor div{
+     margin:10px;
+ }
+ #anchor a{
+     color:white;
+     font-weight:bold;
+ }
 .ms-tableCell {
     vertical-align: middle;
     height: auto !important;
@@ -110,6 +143,7 @@ body {
     font-family: Arial;
     margin: 0 auto;
     width: 100%;
+    background-color: hsl(245, 9%, 95%) !important;
 }
 
 img {
@@ -243,22 +277,35 @@ img.imageDiaporama {
     top: 0;
     width: 100%;
     z-index: -1;
+    height: 100%;
 }
+
+
 /*#endregion */
 
 /*#region MENU */
 
 /* MENU */
-body{
-    transition:.4s ease-in-out;
+.noOverflow {
+    overflow: hidden;
 }
-.sousMenuTransform{
-    transform:translateX(190px);
+
+#body {
+    transition: .4s ease-in-out;
+    min-height: 99vh;
 }
-nav{
+
+.sousMenuTransform {
+    transform: translateX(200px);
+}
+
+nav {
     height: 5vh;
-    background:#89bd24;
+    background: #89bd24;
+    justify-content: center !important;
+    z-index:3;
 }
+
 .nav-link {
     color: black !important;
 }
@@ -266,49 +313,161 @@ nav{
     .nav-link.active, .nav-link:hover {
         color: white !important;
     }
-    .sousMenu{
-         transform:translateX(-190px);
+
+.sousMenu {
+    transform: translateX(-200px);
     position: absolute;
     top: 0;
     display: flex;
     height: 100%;
-    overflow: auto;
+    overflow: hidden;
     flex-direction: column;
-        padding: 0px 25px;
-        background:black;
-    }
-    .sousMenu div {
-        color: white;
+    padding: 0;
+    transition: .4s ease-in-out;
+    max-height: 100vh;
+}
+
+.sousMenuTransform + .sousMenu {
+    overflow-y: auto;
+    transform: translateX(0px);
+    background: hsl(240, 2%, 58%);
+}
+
+.sousMenu div {
+    color: white;
     text-align: center;
-    margin: 0 0 5px 0;
-    }
-    .sousMenu img {
-        width: 100%;
+    margin: 0 0 -30% 0;
+    transition: .4s ease-in-out;
+}
+
+.sousMenu span {
+    font-weight: bold;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    color: black;
+    background: rgba(137, 189, 36, 0.6);
+}
+
+.sousMenu img {
+    width: 200px;
     height: auto;
 }
-    #distrapro{
 
-    }
+#distrapro {
+}
+
+.navbar-brand > img {
+    border-radius: 0.75rem;
+    width: 300px;
+    background: #89bd24;
+}
+
+#liBrand {
+    height: inherit;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#sandwich {
+    display: none;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s ease-in-out;
+}
+
+.changeSandwich .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.changeSandwich .bar2 {
+    opacity: 0;
+}
+
+.changeSandwich .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.navbar-brand-mobile {
+    display: none;
+}
+
+#overlay::after {
+    visibility: hidden;
+    opacity: 0;
+    content: "";
+    background-color: rgba(0, 0, 10, .4);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 4;
+    transition: visibility 0s .4s, opacity .4s ease-in-out;
+}
+
+#overlay.active::after {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity .4s ease-in-out;
+}
+
 @media (max-height : 850px) and (max-width:450px) and (orientation: portrait), (max-width : 850px) and (max-height:450px) and (orientation: landscape) {
-    .navbar-nav {
-        -ms-flex-direction: row !important;
-        flex-direction: row !important;
+    #sandwich {
+        display: inline-block;
+        cursor: pointer;
     }
+
+    nav {
+        height: auto;
+        padding: 0;
+        justify-content: flex-start !important;
+    }
+
+    .navbar-nav {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        border-top: 1px solid;
+        opacity: 0;
+        width: 100%;
+        justify-content: space-around;
+        transition: .4s ease-in-out;
+        z-index: 1;
+        background: #89bd24;
+        flex-wrap: wrap;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+    }
+
+        .navbar-nav li {
+            border: 0 0 0 1px solid;
+        }
+
+    .open {
+        opacity: 1;
+    }
+
     .nav-link {
         padding-right: .5rem !important;
         padding-left: .5rem !important;
     }
+
+    #liBrand {
+        display: none;
+    }
 }
 
 
-.navbar-brand > img {
-    height: inherit;
-    padding: 5px;
-    position: absolute;
-    top: -30px;
-    border-radius: 0.75rem;
-    right:0;
-}
 
 
 
@@ -699,14 +858,13 @@ form button {
 /* FOOTER */
 
 footer {
-    position: fixed;
-    bottom: 0;
+    position: absolute;
     width: 100%;
     height: 29px;
     background-color: #000;
     color: #808080;
-    margin-top: 20px;
     font-size: 11px;
+    z-index:3;
 }
 
     footer a {
@@ -755,4 +913,12 @@ table, form {
 
 td * {
     width: 100%;
+}
+
+#precProd img{
+    transform:rotate(90deg);
+}
+#nextProd img{
+        transform:rotate(-90deg);
+
 }

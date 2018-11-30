@@ -9,174 +9,149 @@
     <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-    <div id="diaporama">
-        <div id="distrapro">
-            <a href="http://appli.distral.fr/B2B/Default.aspx" target="_blank">Espace Pro</a>
+
+    <div id="body">
+        <div id="overlay"></div>
+        <div id="diaporama">
+            <div id="distrapro">
+                <a href="http://appli.distral.fr/B2B/Default.aspx" target="_blank">Espace Pro</a>
+            </div>
+            <div id="diap">
+
+            </div>
         </div>
-        <div id="diap">
-            <div class="slide">
-                <img class="imageDiaporama imgDiap" src="datas/diaporama/37/top3_37.jpg" alt="" />
+        <nav class="navbar navbar-expand">
+            <div id="sandwich">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
             </div>
-            <div class="slide">
-                <img class="imageDiaporama imgDiap" src="datas/diaporama/48/top1_48.jpg" alt="" />
-            </div>
-            <div class="slide">
-                <img class="imageDiaporama imgDiap" src="datas/diaporama/47/top2_47.jpg" alt="" />
-            </div>
-            <div class="slide">
-                <img class="imageDiaporama imgDiap" src="datas/diaporama/45/5_45.jpg" alt="" />
-            </div>
-            <div class="slide">
-                <img class="imageDiaporama imgDiap" src="datas/diaporama/44/top2_44.jpg" alt="" />
-            </div>
-            <div class="slide">
-                <img class="imageDiaporama imgDiap" src="datas/diaporama/76/motorisation_portail_coulissant_poteau_inty_gral_avec_blancs_76.jpg" alt="" />
-            </div>
-            <div class="slide">
-                <img class="imageDiaporama imgDiap" src="datas/diaporama/39/porte_sectionnelle_39.jpg" alt="" />
-            </div>
-            <div class="slide">
-                <img class="imageDiaporama imgDiap" src="datas/diaporama/43/top1_43.jpg" alt="" />
-            </div>
-            <div class="slide">
-                <img class="imageDiaporama imgDiap" src="datas/diaporama/40/garde_corps_aluminium_remplissage_ty_le_perfory_e_40.jpg" alt="" />
-            </div>
-            <div class="slide">
-                <img class="imageDiaporama imgDiap" src="datas/diaporama/38/top1_38.jpg" alt="" />
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class='actif nav-link' href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="societe.html" class="nav-link">Société</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="savoir.html" class="nav-link">Technologie</a>
+                </li>
+                <li class="nav-item">
+                    <a id="menuProduitslink" class="nav-link">Produits</a>
+                </li>
+                <li class="nav-item">
+                    <a href="garanties.html" class="nav-link">Garanties</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li id="liBrand">
+                    <a class="navbar-brand">
+                        <img id="imgBrand" src="css/img/distral.png" alt="Rinoweb" />
+                    </a>
+                </li>
+            </ul>
+            
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-5 pr-1">
+                    <span class="titre row">Bienvenue !</span>
+                    <span class="mt-3 row">
+                        L&#39;entreprise est n&eacute;e en 1993 d&#39;une alliance familiale entre passionn&eacute;s : Christian MANENC, fort de 35 ann&eacute;es d&#39;exp&eacute;rience, et Laurent, son fils, dot&eacute; d&#39;une &eacute;difiante envie d&#39;innover.
+                        <br />
+                        Aujourd&#39;hui Distral est un leader reconnu dans l&#39;univers du portail et de l&#39;aluminium en &eacute;tant &agrave; la fois un concepteur, un gammiste et un fabricant.
+                    </span><br />
+                    <a class="savoirPlus row" href="societe.html">Lire la suite</a>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-5">
+                    <h2><img src="css/img/h2.png" alt="" class="imageH2" />Actualités</h2>
+                    <div class="actualite row">
+                        <div class="col-4">
+                            <img class="imageActu" src="datas/actualites/11/site_coquelicot_site_copie_11.jpg" alt="" />
+                        </div>
+                        <div class="col-8">
+
+                            <p class="titreActu row">Nouvelle gamme : Mirage Color</p>
+                            <p class="descrActu row">
+                                DISTRAL vous en fait voir de toutes les couleurs.
+                                Venez découvrir cette dernière gamme de portails colorés et personnalisables.
+                            </p>
+                            <div class="row">
+                                <a class="savoirPlus" href="actualites.html">Lire la suite</a>
+                            </div>
+                            <div class="row">
+                                <a class="plusInfos" href="produit.html">Mirage Color</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="actualite row">
+                        <div class="col-4">
+                            <img class="imageActu" src="datas/actualites/1/site_50_1.jpg" alt="" align="left" />
+                        </div>
+                        <div class="col-8">
+                            <p class="titreActu row">Nouvelle Distra'Sun® : Lames Plates</p>
+                            <p class="descrActu row">
+                                Aujourd'hui, DISTRAL vous présente sa dernière évolution sur la Distra'Sun®,
+                                sa lame plate.
+                            </p>
+                            <div class="row">
+                                <a class="savoirPlus" href="actualites.html">Lire la suite</a>
+                            </div>
+                            <div class="row">
+                                <a class="plusInfos" href="produit.html">Distrasun PREMIUM</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand affix-top-main">
 
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class='actif nav-link' href="index.html">Accueil</a>
-            </li>
-            <li class="nav-item">
-                <a href="societe.html" class="nav-link">Société</a>
-            </li>
-
-            <li class="nav-item">
-                <a href="savoir.html" class="nav-link">Technologie</a>
-            </li>
-            <li class="nav-item">
-                <a id="menuProduitslink" class="nav-link">Produits</a>
-            </li>
-            <li class="nav-item">
-                <a href="garanties.html" class="nav-link">Garanties</a>
-            </li>
-            <li class="nav-item">
-                <a href="contact.html" class="nav-link">Contact</a>
-            </li>
-            <li>
-                <a class="navbar-brand">
-                    <img id="imgBrand" src="css/img/distral.png" alt="Rinoweb" />
-                </a>
-            </li>
-        </ul>
-
-    </nav>
     <div class="sousMenu">
-        <div>
+        <div data-href="portails.html">
             <span>Portails</span>
             <img class="row mx-auto" src="images/sousMenu1.png" alt="" />
         </div>
-        <div>
+        <div data-href="volets.html">
             <span>Volets</span>
             <img class="row mx-auto" src="images/sousMenu2.png" alt="" />
         </div>
-        <div>
+        <div data-href="distrasun.html">
             <span>Distra'sun</span>
             <img class="row  mx-auto" src="images/sousMenu3.png" alt="" />
         </div>
-        <div>
+        <div data-href="cloture.html">
             <span>Clôture</span>
             <img class="row mx-auto" src="images/sousMenu4.png" alt="" />
-
         </div>
-
-        <div>
+        <div data-href="gardecorps.html">
             <span>Garde-Corps</span>
             <img class="row mx-auto" src="images/sousMenu5.png" alt="" />
-
         </div>
-        <div>
+        <div data-href="garage.html">
             <span>Porte de garage</span>
             <img class="row  mx-auto" src="images/sousMenu6.png" alt="" />
-
         </div>
-        <div>
+        <div data-href="piscine.html">
             <span>Barrière de piscine</span>
             <img class="row mx-auto" src="images/sousMenu6.png" alt="" />
-
         </div>
-        <div>
+        <div data-href="motorisation.html">
             <span>Motorisation</span>
             <img class="row mx-auto" src="images/sousMenu5.png" alt="" />
-
-
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-5 pr-1">
-                <span class="titre row">Bienvenue !</span>
-                <span class="mt-3 row">
-                    L&#39;entreprise est n&eacute;e en 1993 d&#39;une alliance familiale entre passionn&eacute;s : Christian MANENC, fort de 35 ann&eacute;es d&#39;exp&eacute;rience, et Laurent, son fils, dot&eacute; d&#39;une &eacute;difiante envie d&#39;innover.
-                    <br />
-                    Aujourd&#39;hui Distral est un leader reconnu dans l&#39;univers du portail et de l&#39;aluminium en &eacute;tant &agrave; la fois un concepteur, un gammiste et un fabricant.
-                </span><br />
-                <a class="savoirPlus row" href="societe.html">Lire la suite</a>
-            </div>
-            <div class="col-1"></div>
-            <div class="col-5">
-                <h2><img src="css/img/h2.png" alt="" class="imageH2" />Actualités</h2>
-                <div class="actualite row">
-                    <div class="col-4">
-                        <img class="imageActu" src="datas/actualites/11/site_coquelicot_site_copie_11.jpg" alt="" />
-                    </div>
-                    <div class="col-8">
-
-                        <p class="titreActu row">Nouvelle gamme : Mirage Color</p>
-                        <p class="descrActu row">
-                            DISTRAL vous en fait voir de toutes les couleurs.
-                            Venez découvrir cette dernière gamme de portails colorés et personnalisables.
-                        </p>
-                        <div class="row">
-                            <a class="savoirPlus" href="actualites.html">Lire la suite</a>
-                        </div>
-                        <div class="row">
-                            <a class="plusInfos" href="produit.html">Mirage Color</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="actualite row">
-                    <div class="col-4">
-                        <img class="imageActu" src="datas/actualites/1/site_50_1.jpg" alt="" align="left" />
-                    </div>
-                    <div class="col-8">
-                        <p class="titreActu row">Nouvelle Distra'Sun® : Lames Plates</p>
-                        <p class="descrActu row">
-                            Aujourd'hui, DISTRAL vous présente sa dernière évolution sur la Distra'Sun®,
-                            sa lame plate.
-                        </p>
-                        <div class="row">
-                            <a class="savoirPlus" href="actualites.html">Lire la suite</a>
-                        </div>
-                        <div class="row">
-                            <a class="plusInfos" href="produit.html">Distrasun PREMIUM</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <footer>
         <table>
             <tr>
