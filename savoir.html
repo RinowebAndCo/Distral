@@ -10,18 +10,29 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
-    <script src="https://rawgithub.com/garand/sticky/master/jquery.sticky.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
+
     <div id="body">
         <div id="overlay"></div>
         <div id="diaporama">
+
             <div id="distrapro">
-                <a href="http://appli.distral.fr/B2B/Default.aspx" target="_blank">Espace Pro</a>
+                <i class="fas fa-angle-double-right"></i>
+                <a href="http://appli.distral.fr/B2B/Default.aspx" target="_blank">
+                    Espace Pro
+                </a>
+                <i class="fas fa-angle-double-left"></i>
+            </div>
+            <div id="liBrand">
+                <a class="navbar-brand">
+                    <img id="imgBrand" src="css/img/distral.png" alt="Rinoweb" />
+                </a>
             </div>
             <div id="diap">
 
@@ -34,6 +45,7 @@
                 <div class="bar3"></div>
             </div>
             <ul class="navbar-nav">
+
                 <li class="nav-item">
                     <a class='actif nav-link' href="index.html">Accueil</a>
                 </li>
@@ -53,26 +65,22 @@
                 <li class="nav-item">
                     <a href="contact.html" class="nav-link">Contact</a>
                 </li>
-                <li id="liBrand">
-                    <a class="navbar-brand">
-                        <img id="imgBrand" src="css/img/distral.png" alt="Rinoweb" />
-                    </a>
-                </li>
             </ul>
 
         </nav>
+
         <div class="container">
             <div id="technologie" class="savoir col-12">
                 <div class="text-center">
                     <h2>Technologie <span>Le savoir faire</span></h2>
                 </div>
                 <div id="main" class="row">
-                    <div id="colLeft" class="col-2">
+                    <div id="colLeft" class="col-md-2 col-sm-12">
                         <a class="current row" href="#">Le savoir faire</a>
                         <a class="row" href="test.html">Test & fiabilité</a>
                     </div>
-                    <div id="mainTechnologie" class="col-10">
-                        <div id="ligne1" class="row">
+                    <div id="mainTechnologie" class="col-md-10 col-sm-12 text-center">
+                        <div id="ligne1" class="">
                             <h3>
                                 DISTRAL : le r&ecirc;ve aluminium
                             </h3>
@@ -81,12 +89,12 @@
                             &nbsp;
                         </div>
                         <div id="ligne2" class="row">
-                            <div id="l2Col1" class="col-4">
+                            <div id="l2Col1" class="col-md-4 col-sm-12">
                                 <img alt="" src="userfiles/1/images/savoir.jpg" style="width: 299px; height: 193px;" /><br />
                                 <br />
                                 &nbsp;
                             </div>
-                            <div id="l2Col2" class="col-8">
+                            <div id="l2Col2" class="col-md-8 col-sm-12">
                                 <div style="text-align: center;">
                                     <span class="titreFleche" style="margin-top: 0px;">Le syst&egrave;me coulissant &agrave; cr&eacute;maill&egrave;re POTEAU INTEGRAL :</span><br />
                                     <span style="font-size: 26px;"><strong><span style="color: rgb(255, 140, 0);">Innovation DISTRAL</span></strong></span><br />
@@ -95,7 +103,7 @@
                                     <strong>Le moteur est incorpor&eacute; dans le poteau de guidage.</strong>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="">
                                 <span style="font-size: 14px;"><strong>Les avantages :</strong></span>
                             </div>
                             <ul class="circleOrange">
@@ -118,56 +126,63 @@
                             &nbsp;
                         </div>
                         <div class="row">
-                            <div class="col-6">
-                                <span class="titreFleche">Le syst&egrave;me &agrave; bras :</span> Facile &agrave; installer ne n&eacute;cessite aucune pr&eacute;paration particuli&egrave;re, s&#39;adapte &agrave; tous types de portails battants,ce syst&egrave;me est celui qui se rapproche le plus de l&#39;ouverture manuelle. Son principe est celui d&#39;un moteur par battant qui agit sur un axe faisant tourner un bras articul&eacute;.<br />
-                                <img alt="" src="userfiles/1/images/bras.jpg" style="width: 322px; height: 244px;" />
+                            <div class="col-md-6 col-sm-12">
+                                <span class="titreFleche row">Le syst&egrave;me &agrave; bras :</span> Facile &agrave; installer ne n&eacute;cessite aucune pr&eacute;paration particuli&egrave;re, s&#39;adapte &agrave; tous types de portails battants,ce syst&egrave;me est celui qui se rapproche le plus de l&#39;ouverture manuelle. Son principe est celui d&#39;un moteur par battant qui agit sur un axe faisant tourner un bras articul&eacute;.<br />
+                                <img class="row" alt="" src="userfiles/1/images/bras.jpg" />
                             </div>
-                            <div class="col-6">
-                                <span class="titreFleche">Le syst&egrave;me enterr&eacute; :</span> Ce syst&egrave;me n&eacute;cessite pr&eacute;alablement des r&eacute;servations de ma&ccedil;onnerie au pied des piliers. Robuste et tr&egrave;s puissant con&ccedil;u pour des portails tr&egrave;s lourds.<br />
+                            <div class="col-md-6 col-sm-12">
+                                <span class="titreFleche row">Le syst&egrave;me enterr&eacute; :</span> Ce syst&egrave;me n&eacute;cessite pr&eacute;alablement des r&eacute;servations de ma&ccedil;onnerie au pied des piliers. Robuste et tr&egrave;s puissant con&ccedil;u pour des portails tr&egrave;s lourds.<br />
                                 <br />
                                 <br />
-                                <img alt="" src="userfiles/1/images/entere.jpg" style="width: 335px; height: 252px;" />
+                                <img class="row"alt="" src="userfiles/1/images/entere.jpg" />
                             </div>
                         </div>                        &nbsp;
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
     <div class="sousMenu">
         <div data-href="portails.html">
             <span>Portails</span>
-            <img class="row mx-auto" src="images/sousMenu1.png" alt="" />
+            <img class="row mx-auto" src="images/Portail.jpg" alt="" />
         </div>
         <div data-href="volets.html">
             <span>Volets</span>
-            <img class="row mx-auto" src="images/sousMenu2.png" alt="" />
+            <img class="row mx-auto" src="images/Volet.jpg" alt="" />
         </div>
         <div data-href="distrasun.html">
             <span>Distra'sun</span>
-            <img class="row  mx-auto" src="images/sousMenu3.png" alt="" />
+            <img class="row  mx-auto" src="images/Distrasun.jpg" alt="" />
         </div>
         <div data-href="cloture.html">
             <span>Clôture</span>
-            <img class="row mx-auto" src="images/sousMenu4.png" alt="" />
+            <img class="row mx-auto" src="images/Cloture.jpg" alt="" />
         </div>
         <div data-href="gardecorps.html">
             <span>Garde-Corps</span>
-            <img class="row mx-auto" src="images/sousMenu5.png" alt="" />
+            <img class="row mx-auto" src="images/GardeCorps.jpg" alt="" />
         </div>
         <div data-href="garage.html">
             <span>Porte de garage</span>
-            <img class="row  mx-auto" src="images/sousMenu6.png" alt="" />
+            <img class="row  mx-auto" src="images/PorteGarage.jpg" alt="" />
         </div>
         <div data-href="piscine.html">
             <span>Barrière de piscine</span>
-            <img class="row mx-auto" src="images/sousMenu6.png" alt="" />
+            <img class="row mx-auto" src="images/BarrierePiscine.jpg" alt="" />
         </div>
         <div data-href="motorisation.html">
             <span>Motorisation</span>
-            <img class="row mx-auto" src="images/sousMenu5.png" alt="" />
+            <img class="row mx-auto" src="images/Motorisation.jpg" alt="" />
         </div>
     </div>
+    <div id="closeSousMenu">
+        <button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
 
     <footer>
         <table>

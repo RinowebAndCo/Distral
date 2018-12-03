@@ -358,7 +358,7 @@ nav {
 }
 
     .nav-link.active, .nav-link:hover {
-        color: white !important;
+            color: #89bd24 !important;
     }
 
 .sousMenu {
@@ -490,7 +490,9 @@ nav {
 .isSticky #liBrand {
     display: none;
 }
-
+#menuProduitslink{
+    cursor:pointer !important;
+}
 #sandwich {
     display: none;
 }
@@ -611,6 +613,7 @@ nav {
 
     .navbar-nav.open {
         pointer-events: auto;
+        opacity:1;
     }
 
     .navbar-nav li::after {
@@ -628,18 +631,12 @@ nav {
         width: 5%;
     }
 
-    .navbar-nav li:last-child::after {
-        height: 0;
+    .navbar-nav li:nth-last-child(1)::after  {
+        height: 0 !important;
     }
 
-        .navbar-nav li:nth-last-of-type(2){
-            border-bottom: 0;
-        }
-         .navbar-nav li {
-             border-width:0;
-            border-bottom: 1px solid;
-            transition: border-width 1s;
-        }
+       
+       
     .open {
         -moz-transform: translateX(0);
         -ms-transform: translateX(0);
@@ -653,9 +650,7 @@ nav {
         padding-left: .5rem !important;
     }
 
-        .nav-link.active, .nav-link:hover {
-            color: #89bd24 !important;
-        }
+       
 
     #liBrand {
         display: none;
@@ -672,6 +667,9 @@ nav {
 .vAlign{
         display: flex;
     align-items: center;
+}
+.container{
+    margin-bottom:2rem;
 }
 #contener {
     width: 940px;
@@ -889,29 +887,6 @@ d#mainTechnologie {
 }
 
 
-#l2Col1 {
-    width: 300px;
-    float: left;
-    text-align: justify;
-}
-
-#l2Col2 {
-    width: 467px;
-    float: right;
-    text-align: justify;
-}
-
-#l2Col1 {
-    width: 400px;
-    float: left;
-    text-align: justify;
-}
-
-#l2Col2 {
-    width: 346px;
-    float: right;
-    text-align: justify;
-}
 
 .circleOrange > li {
     list-style-image: url(img/puceOrange.png);
@@ -1052,16 +1027,15 @@ form button {
 footer {
     position: absolute;
     width: 100%;
-    height: 29px;
-    background-color: #000;
-    color: #808080;
+    background-color: #282827;
+    color: hsl(245, 9%, 95%);
     font-size: 11px;
     z-index: 3;
 }
 
     footer a {
         text-decoration: none;
-        color: #808080;
+        color: hsl(245, 9%, 95%);
     }
 
     footer table {
@@ -1071,7 +1045,7 @@ footer {
 
     footer .tdFooter1 {
         text-align: left;
-        padding-left: 10px;
+        width:25%;
     }
 
     footer .tdFooter2 {
@@ -1080,7 +1054,7 @@ footer {
 
     footer .tdFooter3 {
         text-align: right;
-        padding-right: 10px;
+        width:25%;
     }
 
 /* GENERAL */
@@ -1096,7 +1070,7 @@ footer {
 }
 
 [data-href] {
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
 table, form {
