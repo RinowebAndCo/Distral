@@ -6,6 +6,15 @@ $(document).ready(function () {
     initDiap();
     clickMenu();
     datahref();
+    //$("nav").sticky({ topSpacing: 0, zIndex:3 });
+    $(window).scroll(function (e) {
+        e.preventDefault();
+        if ($(window).scrollTop() >= $('nav').offset().top) {
+            $('nav').addClass('isSticky');
+        } else {
+            $('nav').removeClass('isSticky');
+        }
+    });
 });
 
 function initDiap() {
@@ -303,6 +312,7 @@ function clickMenu() {
     $('#sandwich').click(function () {
         $(this).toggleClass("changeSandwich");
         $(".navbar-nav").toggleClass("open");
+        $("#body").toggleClass("menuOpen");
     });
     $('.sousMenu div').mouseenter(function () {
 
