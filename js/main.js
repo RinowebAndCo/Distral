@@ -43,27 +43,14 @@ function initProduitCloture() {
         anchors: ['accueil', 'gamme'],
         menu: '#navigationProduit',
         afterRender: function () {
-            var heightOff = $('nav').height() + $('footer').height() + $('#anchor').height();
-            $('.ms-section,#navigationProduit').css('min-height', 'calc(100vh - ' + heightOff + 'px');
+            dimensionMultiscroll();
             verifIndex();
         },
         afterLoad: function () {
             verifIndex();
         }
-    });
-    $(window).on('resize', function () {
-        var heightOff = $('nav').height() + $('footer').height() + $('#anchor').height();
-        $('.ms-section').css('height', 'calc(100vh - ' + heightOff + 'px');
-
-    });
-    $('#precProd').click(function(){
-        $.fn.multiscroll.moveSectionUp();
-        
-    });
-    $('#nextProd').click(function () {
-        $.fn.multiscroll.moveSectionDown();
-    });
-   
+  });
+    navigationMultiscroll();
 }
 
 function initProduitDistrasun() {
@@ -74,26 +61,14 @@ function initProduitDistrasun() {
         anchors: ['accueil', 'gamme','alizee','eole'],
         menu: '#navigationProduit',
         afterRender: function () {
-            var heightOff = $('nav').height() + $('footer').height() + $('#anchor').height();
-            $('.ms-section,#navigationProduit').css('min-height', 'calc(100vh - ' + heightOff + 'px');
+            dimensionMultiscroll();
             verifIndex();
         },
         afterLoad: function () {
             verifIndex();
         }
     });
-    $(window).on('resize', function () {
-        var heightOff = $('nav').height() + $('footer').height() + $('#anchor').height();
-        $('.ms-section').css('height', 'calc(100vh - ' + heightOff + 'px');
-
-    });
-    $('#precProd').click(function () {
-        $.fn.multiscroll.moveSectionUp();
-
-    });
-    $('#nextProd').click(function () {
-        $.fn.multiscroll.moveSectionDown();
-    });
+    navigationMultiscroll();
 
 }
 
@@ -105,26 +80,14 @@ function initProduitGC() {
         anchors: ['accueil'],
         menu: '#navigationProduit',
         afterRender: function () {
-            var heightOff = $('nav').height() + $('footer').height() + $('#anchor').height();
-            $('.ms-section,#navigationProduit').css('min-height', 'calc(100vh - ' + heightOff + 'px');
+            dimensionMultiscroll();
             verifIndex();
         },
         afterLoad: function () {
             verifIndex();
         }
     });
-    $(window).on('resize', function () {
-        var heightOff = $('nav').height() + $('footer').height() + $('#anchor').height();
-        $('.ms-section').css('height', 'calc(100vh - ' + heightOff + 'px');
-
-    });
-    $('#precProd').click(function () {
-        $.fn.multiscroll.moveSectionUp();
-
-    });
-    $('#nextProd').click(function () {
-        $.fn.multiscroll.moveSectionDown();
-    });
+    navigationMultiscroll();
 
 }
 
@@ -136,27 +99,14 @@ function initProduitGarage() {
         anchors: ['accueil'],
         menu: '#navigationProduit',
         afterRender: function () {
-            var heightOff = $('nav').height() + $('footer').height() + $('#anchor').height();
-            $('.ms-section,#navigationProduit').css('min-height', 'calc(100vh - ' + heightOff + 'px');
+            dimensionMultiscroll();
             verifIndex();
         },
         afterLoad: function () {
             verifIndex();
         }
     });
-    $(window).on('resize', function () {
-        var heightOff = $('nav').height() + $('footer').height() + $('#anchor').height();
-        $('.ms-section').css('height', 'calc(100vh - ' + heightOff + 'px');
-
-    });
-    $('#precProd').click(function () {
-        $.fn.multiscroll.moveSectionUp();
-
-    });
-    $('#nextProd').click(function () {
-        $.fn.multiscroll.moveSectionDown();
-    });
-
+    navigationMultiscroll();
 }
 
 function initProduitPiscine() {
@@ -167,26 +117,14 @@ function initProduitPiscine() {
         anchors: ['accueil'],
         menu: '#navigationProduit',
         afterRender: function () {
-            var heightOff = $('nav').height() + $('footer').height() + $('#anchor').height();
-            $('.ms-section,#navigationProduit').css('min-height', 'calc(100vh - ' + heightOff + 'px');
+            dimensionMultiscroll();
             verifIndex();
         },
         afterLoad: function () {
             verifIndex();
         }
     });
-    $(window).on('resize', function () {
-        var heightOff = $('nav').height() + $('footer').height() + $('#anchor').height();
-        $('.ms-section').css('height', 'calc(100vh - ' + heightOff + 'px');
-
-    });
-    $('#precProd').click(function () {
-        $.fn.multiscroll.moveSectionUp();
-
-    });
-    $('#nextProd').click(function () {
-        $.fn.multiscroll.moveSectionDown();
-    });
+    navigationMultiscroll();
 
 }
 
@@ -198,33 +136,24 @@ function initProduitMotorisation() {
         anchors: ['accueil'],
         menu: '#navigationProduit',
         afterRender: function () {
-            var heightOff = $('nav').height() + $('footer').height() + $('#anchor').height();
-            $('.ms-section,#navigationProduit').css('min-height', 'calc(100vh - ' + heightOff + 'px');
+            dimensionMultiscroll();
             verifIndex();
         },
         afterLoad: function () {
             verifIndex();
         }
     });
-    $(window).on('resize', function () {
-        var heightOff = $('nav').height() + $('footer').height() + $('#anchor').height();
-        $('.ms-section').css('height', 'calc(100vh - ' + heightOff + 'px');
-
-    });
-    $('#precProd').click(function () {
-        $.fn.multiscroll.moveSectionUp();
-
-    });
-    $('#nextProd').click(function () {
-        $.fn.multiscroll.moveSectionDown();
-    });
+    navigationMultiscroll();
 
 }
 
 function initProduitPortail() {
+    
     $('#multiscroll').multiscroll({
         verticalCentered: true,
         keyboardScrolling: true,
+        paddingTop: $('nav').outerHeight() + $('#anchor').outerHeight(),
+            paddingBottom:  $('footer').outerHeight(),
         menu: true,
         anchors:
             ['Millenium', 'Millenium_2',
@@ -237,26 +166,16 @@ function initProduitPortail() {
             'Modele', 'Modele_2', 'Modele_3', 'Modele_4', ],
         menu: '#navigationProduit',
         afterRender: function () {
-            var heightOff = $('nav').height() + $('footer').height() + $('#anchor').height();
-            $('.ms-section,#navigationProduit').css('min-height', 'calc(100vh - ' + heightOff + 'px');
+            dimensionMultiscroll();
             verifIndex();
+            
         },
         afterLoad: function () {
             verifIndex();
         }
     });
-    $(window).on('resize', function () {
-        var heightOff = $('nav').height() + $('footer').height() + $('#anchor').height();
-        $('.ms-section').css('height', 'calc(100vh - ' + heightOff + 'px');
-
-    });
-    $('#precProd').click(function () {
-        $.fn.multiscroll.moveSectionUp();
-
-    });
-    $('#nextProd').click(function () {
-        $.fn.multiscroll.moveSectionDown();
-    });
+    
+    navigationMultiscroll();
 
 }
 
@@ -269,17 +188,30 @@ function initProduitVolet() {
             ['Presentation', 'Battants','Coulissants'],
         menu: '#navigationProduit',
         afterRender: function () {
-            var heightOff = $('nav').height() + $('footer').height() + $('#anchor').height();
-            $('.ms-section,#navigationProduit').css('min-height', 'calc(100vh - ' + heightOff + 'px');
+            dimensionMultiscroll();
             verifIndex();
         },
         afterLoad: function () {
             verifIndex();
         }
     });
+    navigationMultiscroll();
+
+}
+
+function dimensionMultiscroll()
+    {
+    var heightOff = $('nav').outerHeight() + $('footer').outerHeight() + $('#anchor').outerHeight()+20;
+    $('.ms-tableCell').css('height', 'calc(' + $(window).height() + 'px - ' + heightOff + 'px ');
+
+    $('.ms-section').css('min-height', 'calc(' + $(window).height() + 'px - ' + heightOff + 'px');
+    $('#navigationProduit').css('max-height', 'calc(' + $(window).height() + 'px - ' + heightOff + 'px');
+}
+
+function navigationMultiscroll() {
     $(window).on('resize', function () {
-        var heightOff = $('nav').height() + $('footer').height() + $('#anchor').height();
-        $('.ms-section').css('height', 'calc(100vh - ' + heightOff + 'px');
+        var heightOff = $('nav').outerHeight() + $('footer').outerHeight() + $('#anchor').outerHeight();
+        $('.ms-section').css('height', 'calc(' + $(window).height() + 'px - ' + heightOff + 'px');
 
     });
     $('#precProd').click(function () {
@@ -289,10 +221,10 @@ function initProduitVolet() {
     $('#nextProd').click(function () {
         $.fn.multiscroll.moveSectionDown();
     });
+    $('.ms-left, .ms-right').preview();
+
 
 }
-
-
 // Affiche ou masque le menu en fonction de son état
 function clickMenu() {
     $('#menuProduitslink').on("click",function () {
@@ -300,9 +232,10 @@ function clickMenu() {
         $('body').toggleClass('noOverflow');
         $(this).toggleClass('active');
         $('#overlay').toggleClass('active ')
-        $('.sousMenu').css('top', $(document).scrollTop());
+        $('.sousMenu').css('top', $(document).scrollTop() + (8 * $(window).height() / 100));
+        $('#closeSousMenu').css('top', $(document).scrollTop() + (8 * $(window).height() / 100));
     });
-    $('#overlay').click(function () {
+    $('#overlay,#closeSousMenu').click(function () {
         $('#body').toggleClass('sousMenuTransform');
         $('body').toggleClass('noOverflow');
         $('#menuProduitslink').toggleClass('active');
@@ -314,13 +247,21 @@ function clickMenu() {
         $(".navbar-nav").toggleClass("open");
         $("#body").toggleClass("menuOpen");
     });
-    $('.sousMenu div').mouseenter(function () {
+   
+    $(window).scroll(function () {
 
-        $(this).css('margin', '0 0 0 0');
+        if ($(window).scrollTop() >= $('nav').offset().top) {
+            $('nav').addClass('isSticky');
+        } else {
+            $('nav').removeClass('isSticky');
+        }
+
     });
-    $('.sousMenu div').mouseleave(function () {
+    $(window).on('resize orientationchange', function (e) {
+        e.preventDefault();
+        $('.sousMenu').css('top', $(document).scrollTop() + (8 * $(window).height() / 100));
+        $('#closeSousMenu').css('top', $(document).scrollTop() + (8 * $(window).height() / 100));
 
-        $(this).css('margin', '0 0 -30% 0');
     });
 }
 

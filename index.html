@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
@@ -20,8 +21,18 @@
     <div id="body">
         <div id="overlay"></div>
         <div id="diaporama">
+            
             <div id="distrapro">
-                <a href="http://appli.distral.fr/B2B/Default.aspx" target="_blank">Espace Pro</a>
+                <i class="fas fa-angle-double-right"></i>
+                <a href="http://appli.distral.fr/B2B/Default.aspx" target="_blank">
+                    Espace Pro
+                </a>
+                <i class="fas fa-angle-double-left"></i>
+            </div>
+            <div id="liBrand">
+                <a class="navbar-brand">
+                    <img id="imgBrand" src="css/img/distral.png" alt="Rinoweb" />
+                </a>
             </div>
             <div id="diap">
 
@@ -56,19 +67,13 @@
                 <li class="nav-item">
                     <a href="contact.html" class="nav-link">Contact</a>
                 </li>
-                
-                <li id="liBrand">
-                    <a class="navbar-brand">
-                        <img id="imgBrand" src="css/img/distral.png" alt="Rinoweb" />
-                    </a>
-                </li>
             </ul>
-            
+
         </nav>
 
         <div class="container">
             <div class="row">
-                <div class="col-5 pr-1">
+                <div class="col-md-5 col-sm-12 mx-1">
                     <span class="titre row">Bienvenue !</span>
                     <span class="mt-3 row">
                         L&#39;entreprise est n&eacute;e en 1993 d&#39;une alliance familiale entre passionn&eacute;s : Christian MANENC, fort de 35 ann&eacute;es d&#39;exp&eacute;rience, et Laurent, son fils, dot&eacute; d&#39;une &eacute;difiante envie d&#39;innover.
@@ -78,16 +83,16 @@
                     <a class="savoirPlus row" href="societe.html">Lire la suite</a>
                 </div>
                 <div class="col-1"></div>
-                <div class="col-5">
-                    <h2><img src="css/img/h2.png" alt="" class="imageH2" />Actualités</h2>
+                <div class="col-md-5 col-sm-12 mx-1">
+                    <h2 class="mb-1"><img src="css/img/h2.png" alt="" class="imageH2 justify-content-center" />Actualités</h2>
                     <div class="actualite row">
-                        <div class="col-4">
+                        <div class="col-4 vAlign">
                             <img class="imageActu" src="datas/actualites/11/site_coquelicot_site_copie_11.jpg" alt="" />
                         </div>
                         <div class="col-8">
 
-                            <p class="titreActu row">Nouvelle gamme : Mirage Color</p>
-                            <p class="descrActu row">
+                            <p class="titreActu">Nouvelle gamme : Mirage Color</p>
+                            <p class="descrActu">
                                 DISTRAL vous en fait voir de toutes les couleurs.
                                 Venez découvrir cette dernière gamme de portails colorés et personnalisables.
                             </p>
@@ -100,12 +105,12 @@
                         </div>
                     </div>
                     <div class="actualite row">
-                        <div class="col-4">
+                        <div class="col-4 vAlign">
                             <img class="imageActu" src="datas/actualites/1/site_50_1.jpg" alt="" align="left" />
                         </div>
                         <div class="col-8">
-                            <p class="titreActu row">Nouvelle Distra'Sun® : Lames Plates</p>
-                            <p class="descrActu row">
+                            <p class="titreActu">Nouvelle Distra'Sun® : Lames Plates</p>
+                            <p class="descrActu">
                                 Aujourd'hui, DISTRAL vous présente sa dernière évolution sur la Distra'Sun®,
                                 sa lame plate.
                             </p>
@@ -125,36 +130,41 @@
     <div class="sousMenu">
         <div data-href="portails.html">
             <span>Portails</span>
-            <img class="row mx-auto" src="images/sousMenu1.png" alt="" />
+            <img class="row mx-auto" src="images/Portail.jpg" alt="" />
         </div>
         <div data-href="volets.html">
             <span>Volets</span>
-            <img class="row mx-auto" src="images/sousMenu2.png" alt="" />
+            <img class="row mx-auto" src="images/Volet.jpg" alt="" />
         </div>
         <div data-href="distrasun.html">
             <span>Distra'sun</span>
-            <img class="row  mx-auto" src="images/sousMenu3.png" alt="" />
+            <img class="row  mx-auto" src="images/Distrasun.jpg" alt="" />
         </div>
         <div data-href="cloture.html">
             <span>Clôture</span>
-            <img class="row mx-auto" src="images/sousMenu4.png" alt="" />
+            <img class="row mx-auto" src="images/Cloture.jpg" alt="" />
         </div>
         <div data-href="gardecorps.html">
             <span>Garde-Corps</span>
-            <img class="row mx-auto" src="images/sousMenu5.png" alt="" />
+            <img class="row mx-auto" src="images/GardeCorps.jpg" alt="" />
         </div>
         <div data-href="garage.html">
             <span>Porte de garage</span>
-            <img class="row  mx-auto" src="images/sousMenu6.png" alt="" />
+            <img class="row  mx-auto" src="images/PorteGarage.jpg" alt="" />
         </div>
         <div data-href="piscine.html">
             <span>Barrière de piscine</span>
-            <img class="row mx-auto" src="images/sousMenu6.png" alt="" />
+            <img class="row mx-auto" src="images/BarrierePiscine.jpg" alt="" />
         </div>
         <div data-href="motorisation.html">
             <span>Motorisation</span>
-            <img class="row mx-auto" src="images/sousMenu5.png" alt="" />
+            <img class="row mx-auto" src="images/Motorisation.jpg" alt="" />
         </div>
+    </div>
+    <div id="closeSousMenu">
+        <button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
     </div>
     <footer>
         <table>
